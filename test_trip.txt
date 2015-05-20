@@ -1,0 +1,6 @@
+Train: 49 Lake Shore Ltd.
+Departure: New York (Penn Station), New York
+Monday  May 18, 2015         3:40PM
+Arrival: Chicago (Chicago Union Station), Illinois
+Tuesday May 19, 2015         9:45AM
+Accommodation: 1 Reserved Coach Seat
