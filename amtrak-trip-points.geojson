@@ -41,16 +41,18 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -115.148605, 
-                    36.166813
+                    -115.148914, 
+                    36.097857
                 ]
             }, 
             "type": "Feature", 
             "properties": {
                 "city": "Las Vegas", 
-                "state": "Nevada", 
                 "arrival_date": "2015-05-26T18:50:00+00:00", 
-                "arrival_station": "Las Vegas (Downtown), Nevada"
+                "arrival_station": "Las Vegas (Downtown), Nevada", 
+                "state": "Nevada", 
+                "departure_station": "Las Vegas International Airport, Nevada", 
+                "departure_date": "2015-05-28T21:30:00+00:00"
             }
         }, 
         {
@@ -105,22 +107,6 @@
                 "state": "New York", 
                 "departure_station": "New York (Penn Station), New York", 
                 "departure_date": "2015-05-18T15:40:00+00:00"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -115.148914, 
-                    36.097857
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "city": "Las Vegas International Airport", 
-                "state": "Nevada", 
-                "departure_station": "Las Vegas International Airport, Nevada", 
-                "departure_date": "2015-05-28T21:30:00+00:00"
             }
         }, 
         {

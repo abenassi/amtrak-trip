@@ -56,7 +56,7 @@
         "name": "8004 Thruway Bus", 
         "arrival_station": "Kingman, Arizona", 
         "departure_state": "Nevada", 
-        "departure_city": "Las Vegas International Airport", 
+        "departure_city": "Las Vegas", 
         "departure_date": "2015-05-28T21:30:00+00:00", 
         "duration": 3.5, 
         "departure_station": "Las Vegas International Airport, Nevada", 

@@ -74,7 +74,17 @@ class BaseCity(BaseParser):
     def _parse(cls, line):
         station = line.replace(cls.KEY_WORD, "").split(",")[0]
         city = station.split("(")[0].strip()
-        return city
+        return cls._curate_city_name(city)
+
+    @classmethod
+    def _curate_city_name(cls, city):
+
+        curation_table = {"Las Vegas International Airport": "Las Vegas"}
+
+        if city in curation_table:
+            return curation_table[city]
+        else:
+            return city
 
 
 class DepartureStation(BaseDeparture):
