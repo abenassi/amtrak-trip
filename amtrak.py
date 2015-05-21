@@ -16,6 +16,7 @@ from __future__ import unicode_literals
 import copy
 import json
 import parsers
+import arrow
 
 
 class AmtrakServiceParser(object):
@@ -75,13 +76,25 @@ def parse_services(filename='trip.txt'):
                 yield new_record
 
 
+def add_calc_fields(service):
+    service["duration"] = calc_duration(service)
+    return service
+
+
+def calc_duration(service):
+    duration = arrow.get(service["arrival_date"]) - \
+        arrow.get(service["departure_date"])
+    return duration.total_seconds() / 60 / 60
+
+
 def save_new_json_services(services, json_file_name="amtrak-trip.json"):
     with open(json_file_name, "w") as f:
         f.write(json.dumps(services))
 
 
 def main():
-    save_new_json_services(list(parse_services()))
+    services = [add_calc_fields(service) for service in parse_services()]
+    save_new_json_services(services)
 
 if __name__ == '__main__':
     main()
