@@ -1,2 +1,2 @@
 pyshp==1.2.1
-arrow==
+arrow==0.5.4

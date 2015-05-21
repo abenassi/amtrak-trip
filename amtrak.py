@@ -17,6 +17,7 @@ import copy
 import json
 import parsers
 import arrow
+import sys
 
 
 class AmtrakServiceParser(object):
@@ -92,9 +93,13 @@ def save_new_json_services(services, json_file_name="amtrak-trip.json"):
         f.write(json.dumps(services))
 
 
-def main():
-    services = [add_calc_fields(service) for service in parse_services()]
+def main(filename='trip.txt'):
+    services = [add_calc_fields(service) for service
+                in parse_services(filename)]
     save_new_json_services(services)
 
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) == 2:
+        main(sys.argv[2])
+    else:
+        main()
