@@ -14,8 +14,9 @@ from __future__ import unicode_literals
 import json
 import shapefile
 from fuzzywuzzy import process
+from pprint import pprint
 
-from graph import rail_graph
+# from graph import rail_graph
 
 
 def load_json_services(json_file="amtrak-trip.json"):
@@ -54,7 +55,11 @@ def create_line(service):
 
 
 def _coords_to_line(origin, destination):
-    return {"type": "LineString", "coordinates": [origin, destination]}
+    return {"type": "MultiLineString", "coordinates": [[origin, destination]]}
+
+
+def create_point(coordinates):
+    return {"type": "Point", "coordinates": coordinates}
 
 
 def load_amtrak_path(service, graph):
@@ -112,8 +117,22 @@ def _calculate_coord_diff(coord_a, coord_b):
     # print coord_a, coord_b, diff_x, diff_y
     return max(diff_x, diff_y)
 
+
 def _path_to_geojson(path):
     pass
+
+
+def to_geojson_format(services):
+    geojson_dict = {"type": "FeatureCollection",
+                    "features": []}
+    for service in services:
+        geometry = service["the_geom"]
+        del service["the_geom"]
+        geojson_service = {"type": "Feature", "geometry": geometry,
+                           "properties": service}
+        geojson_dict["features"].append(geojson_service)
+
+    return geojson_dict
 
 
 def save_new_json_services(services,
@@ -125,12 +144,53 @@ def save_new_json_services(services,
 def main():
     services = load_json_services()
 
+    points_dict = {}
     for service in services:
+
+        # create lines dict
         geolocalize_stations(service)
         service["the_geom"] = create_line(service)
         # service["the_geom"] = load_amtrak_path(service)
 
-    save_new_json_services(services)
+        # create points dict
+        if service["departure_city"] not in points_dict:
+            points_dict[service["departure_city"]] = {}
+        if service["arrival_city"] not in points_dict:
+            points_dict[service["arrival_city"]] = {}
+
+        # process departure data of the service
+        points_dict[service["departure_city"]]["city"] = \
+            service["departure_city"]
+        points_dict[service["departure_city"]]["departure_station"] = \
+            service["departure_station"]
+        points_dict[service["departure_city"]]["departure_date"] = \
+            service["departure_date"]
+        points_dict[service["departure_city"]]["the_geom"] = \
+            create_point(service["departure_coordinates"])
+
+        # process arrival data of the service
+        points_dict[service["arrival_city"]]["city"] = \
+            service["arrival_city"]
+        points_dict[service["arrival_city"]]["arrival_station"] = \
+            service["arrival_station"]
+        points_dict[service["arrival_city"]]["arrival_date"] = \
+            service["arrival_date"]
+        points_dict[service["arrival_city"]]["the_geom"] = \
+            create_point(service["arrival_coordinates"])
+
+
+    # create points json and geojson files
+    # pprint(points_dict)
+    save_new_json_services(points_dict.values(), "amtrak-trip-points.json")
+    geojson_dict = to_geojson_format(points_dict.values())
+    save_new_json_services(geojson_dict, "amtrak-trip-points.geojson")
+
+    # create lines json and geojson files
+    save_new_json_services(services, "amtrak-trip-lines.json")
+    # pprint(services)
+    geojson_dict = to_geojson_format(services)
+    save_new_json_services(geojson_dict, "amtrak-trip-lines.geojson")
+
 
 if __name__ == '__main__':
     main()

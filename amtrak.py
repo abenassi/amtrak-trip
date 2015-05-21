@@ -85,7 +85,7 @@ def add_calc_fields(service):
 def calc_duration(service):
     duration = arrow.get(service["arrival_date"]) - \
         arrow.get(service["departure_date"])
-    return duration.total_seconds() / 60 / 60
+    return round(duration.total_seconds() / 60 / 60, 1)
 
 
 def save_new_json_services(services, json_file_name="amtrak-trip.json"):
