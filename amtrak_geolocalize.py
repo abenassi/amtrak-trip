@@ -138,7 +138,7 @@ def to_geojson_format(services):
 def save_new_json_services(services,
                            json_file_name="amtrak-trip-geoloc.json"):
     with open(json_file_name, "w") as f:
-        f.write(json.dumps(services))
+        f.write(json.dumps(services, indent=4))
 
 
 def main():
@@ -153,29 +153,29 @@ def main():
         # service["the_geom"] = load_amtrak_path(service)
 
         # create points dict
-        if service["departure_station"] not in points_dict:
-            points_dict[service["departure_station"]] = {}
-        if service["arrival_station"] not in points_dict:
-            points_dict[service["arrival_station"]] = {}
+        if service["departure_city"] not in points_dict:
+            points_dict[service["departure_city"]] = {}
+        if service["arrival_city"] not in points_dict:
+            points_dict[service["arrival_city"]] = {}
 
         # process departure data of the service
-        points_dict[service["departure_station"]]["state"] = \
+        points_dict[service["departure_city"]]["state"] = \
             service["departure_state"]
-        points_dict[service["departure_station"]]["departure_station"] = \
+        points_dict[service["departure_city"]]["departure_station"] = \
             service["departure_station"]
-        points_dict[service["departure_station"]]["departure_date"] = \
+        points_dict[service["departure_city"]]["departure_date"] = \
             service["departure_date"]
-        points_dict[service["departure_station"]]["the_geom"] = \
+        points_dict[service["departure_city"]]["the_geom"] = \
             create_point(service["departure_coordinates"])
 
         # process arrival data of the service
-        points_dict[service["arrival_station"]]["state"] = \
+        points_dict[service["arrival_city"]]["state"] = \
             service["arrival_state"]
-        points_dict[service["arrival_station"]]["arrival_station"] = \
+        points_dict[service["arrival_city"]]["arrival_station"] = \
             service["arrival_station"]
-        points_dict[service["arrival_station"]]["arrival_date"] = \
+        points_dict[service["arrival_city"]]["arrival_date"] = \
             service["arrival_date"]
-        points_dict[service["arrival_station"]]["the_geom"] = \
+        points_dict[service["arrival_city"]]["the_geom"] = \
             create_point(service["arrival_coordinates"])
 
 

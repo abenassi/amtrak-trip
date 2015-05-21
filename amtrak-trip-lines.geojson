@@ -1,1 +1,317 @@
-{"type": "FeatureCollection", "features": [{"geometry": {"type": "MultiLineString", "coordinates": [[[-73.991867, 40.74968], [-87.639168, 41.878731]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-87.639168, 41.878731], "arrival_date": "2015-05-19T09:45:00+00:00", "name": "49 Lake Shore Ltd.", "departure_date": "2015-05-18T15:40:00+00:00", "departure_state": "New York", "departure_coordinates": [-73.991867, 40.74968], "departure_station": "New York (Penn Station), New York", "arrival_station": "Chicago (Chicago Union Station), Illinois", "duration": 18.1, "arrival_state": "Illinois", "accommodation": "1 Reserved Coach Seat"}}, {"geometry": {"type": "MultiLineString", "coordinates": [[[-87.639168, 41.878731], [-122.29068, 37.840679]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-122.29068, 37.840679], "arrival_date": "2015-05-22T16:10:00+00:00", "name": "5 California Zephyr", "departure_date": "2015-05-20T14:00:00+00:00", "departure_state": "Illinois", "departure_coordinates": [-87.639168, 41.878731], "departure_station": "Chicago (Chicago Union Station), Illinois", "arrival_station": "Emeryville, California", "duration": 50.2, "arrival_state": "California", "accommodation": "1 Reserved Coach Seat"}}, {"geometry": {"type": "MultiLineString", "coordinates": [[[-122.29068, 37.840679], [-119.022461, 35.37138]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-119.022461, 35.37138], "arrival_date": "2015-05-26T13:41:00+00:00", "name": "712 San Joaquin", "departure_date": "2015-05-26T07:40:00+00:00", "departure_state": "California", "departure_coordinates": [-122.29068, 37.840679], "departure_station": "Emeryville, California", "arrival_station": "Bakersfield, California", "duration": 6.0, "arrival_state": "California", "accommodation": "1 Reserved Coach Seat"}}, {"geometry": {"type": "MultiLineString", "coordinates": [[[-119.022461, 35.37138], [-115.148605, 36.166813]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-115.148605, 36.166813], "arrival_date": "2015-05-26T18:50:00+00:00", "name": "3612", "departure_date": "2015-05-26T13:50:00+00:00", "departure_state": "California", "departure_coordinates": [-119.022461, 35.37138], "departure_station": "Bakersfield, California", "arrival_station": "Las Vegas (Downtown), Nevada", "duration": 5.0, "arrival_state": "Nevada", "accommodation": "1 Reserved Thruway Seat"}}, {"geometry": {"type": "MultiLineString", "coordinates": [[[-115.148914, 36.097857], [-114.052071, 35.188358]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-114.052071, 35.188358], "arrival_date": "2015-05-29T01:00:00+00:00", "name": "8004 Thruway Bus", "departure_date": "2015-05-28T21:30:00+00:00", "departure_state": "Nevada", "departure_coordinates": [-115.148914, 36.097857], "departure_station": "Las Vegas International Airport, Nevada", "arrival_station": "Kingman, Arizona", "duration": 3.5, "arrival_state": "Arizona", "accommodation": "1 Reserved Thruway Seat"}}, {"geometry": {"type": "MultiLineString", "coordinates": [[[-114.052071, 35.188358], [-87.639168, 41.878731]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-87.639168, 41.878731], "arrival_date": "2015-05-30T15:15:00+00:00", "name": "4 Southwest Chief", "departure_date": "2015-05-29T01:33:00+00:00", "departure_state": "Arizona", "departure_coordinates": [-114.052071, 35.188358], "departure_station": "Kingman, Arizona", "arrival_station": "Chicago (Chicago Union Station), Illinois", "duration": 37.7, "arrival_state": "Illinois", "accommodation": "1 Reserved Coach Seat"}}, {"geometry": {"type": "MultiLineString", "coordinates": [[[-87.639168, 41.878731], [-71.055298, 42.351524]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-71.055298, 42.351524], "arrival_date": "2015-05-31T20:01:00+00:00", "name": "448 Lake Shore Ltd.", "departure_date": "2015-05-30T21:30:00+00:00", "departure_state": "Illinois", "departure_coordinates": [-87.639168, 41.878731], "departure_station": "Chicago (Chicago Union Station), Illinois", "arrival_station": "Boston (South Station), Massachusetts", "duration": 22.5, "arrival_state": "Massachusetts", "accommodation": "1 Reserved Coach Seat"}}, {"geometry": {"type": "MultiLineString", "coordinates": [[[-71.055298, 42.351524], [-73.991867, 40.74968]]]}, "type": "Feature", "properties": {"arrival_coordinates": [-73.991867, 40.74968], "arrival_date": "2015-06-01T19:26:00+00:00", "name": "175 Regional Service", "departure_date": "2015-06-01T15:20:00+00:00", "departure_state": "Massachusetts", "departure_coordinates": [-71.055298, 42.351524], "departure_station": "Boston (South Station), Massachusetts", "arrival_station": "New York (Penn Station), New York", "duration": 4.1, "arrival_state": "New York", "accommodation": "1 Reserved Coach Seat"}}]}
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -73.991867, 
+                            40.74968
+                        ], 
+                        [
+                            -87.639168, 
+                            41.878731
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -87.639168, 
+                    41.878731
+                ], 
+                "arrival_date": "2015-05-19T09:45:00+00:00", 
+                "name": "49 Lake Shore Ltd.", 
+                "departure_date": "2015-05-18T15:40:00+00:00", 
+                "departure_state": "New York", 
+                "departure_coordinates": [
+                    -73.991867, 
+                    40.74968
+                ], 
+                "departure_city": "New York", 
+                "arrival_station": "Chicago (Chicago Union Station), Illinois", 
+                "duration": 18.1, 
+                "departure_station": "New York (Penn Station), New York", 
+                "arrival_state": "Illinois", 
+                "accommodation": "1 Reserved Coach Seat", 
+                "arrival_city": "Chicago"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -87.639168, 
+                            41.878731
+                        ], 
+                        [
+                            -122.29068, 
+                            37.840679
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -122.29068, 
+                    37.840679
+                ], 
+                "arrival_date": "2015-05-22T16:10:00+00:00", 
+                "name": "5 California Zephyr", 
+                "departure_date": "2015-05-20T14:00:00+00:00", 
+                "departure_state": "Illinois", 
+                "departure_coordinates": [
+                    -87.639168, 
+                    41.878731
+                ], 
+                "departure_city": "Chicago", 
+                "arrival_station": "Emeryville, California", 
+                "duration": 50.2, 
+                "departure_station": "Chicago (Chicago Union Station), Illinois", 
+                "arrival_state": "California", 
+                "accommodation": "1 Reserved Coach Seat", 
+                "arrival_city": "Emeryville"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -122.29068, 
+                            37.840679
+                        ], 
+                        [
+                            -119.022461, 
+                            35.37138
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -119.022461, 
+                    35.37138
+                ], 
+                "arrival_date": "2015-05-26T13:41:00+00:00", 
+                "name": "712 San Joaquin", 
+                "departure_date": "2015-05-26T07:40:00+00:00", 
+                "departure_state": "California", 
+                "departure_coordinates": [
+                    -122.29068, 
+                    37.840679
+                ], 
+                "departure_city": "Emeryville", 
+                "arrival_station": "Bakersfield, California", 
+                "duration": 6.0, 
+                "departure_station": "Emeryville, California", 
+                "arrival_state": "California", 
+                "accommodation": "1 Reserved Coach Seat", 
+                "arrival_city": "Bakersfield"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -119.022461, 
+                            35.37138
+                        ], 
+                        [
+                            -115.148605, 
+                            36.166813
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -115.148605, 
+                    36.166813
+                ], 
+                "arrival_date": "2015-05-26T18:50:00+00:00", 
+                "name": "3612", 
+                "departure_date": "2015-05-26T13:50:00+00:00", 
+                "departure_state": "California", 
+                "departure_coordinates": [
+                    -119.022461, 
+                    35.37138
+                ], 
+                "departure_city": "Bakersfield", 
+                "arrival_station": "Las Vegas (Downtown), Nevada", 
+                "duration": 5.0, 
+                "departure_station": "Bakersfield, California", 
+                "arrival_state": "Nevada", 
+                "accommodation": "1 Reserved Thruway Seat", 
+                "arrival_city": "Las Vegas"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -115.148914, 
+                            36.097857
+                        ], 
+                        [
+                            -114.052071, 
+                            35.188358
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -114.052071, 
+                    35.188358
+                ], 
+                "arrival_date": "2015-05-29T01:00:00+00:00", 
+                "name": "8004 Thruway Bus", 
+                "departure_date": "2015-05-28T21:30:00+00:00", 
+                "departure_state": "Nevada", 
+                "departure_coordinates": [
+                    -115.148914, 
+                    36.097857
+                ], 
+                "departure_city": "Las Vegas International Airport", 
+                "arrival_station": "Kingman, Arizona", 
+                "duration": 3.5, 
+                "departure_station": "Las Vegas International Airport, Nevada", 
+                "arrival_state": "Arizona", 
+                "accommodation": "1 Reserved Thruway Seat", 
+                "arrival_city": "Kingman"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -114.052071, 
+                            35.188358
+                        ], 
+                        [
+                            -87.639168, 
+                            41.878731
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -87.639168, 
+                    41.878731
+                ], 
+                "arrival_date": "2015-05-30T15:15:00+00:00", 
+                "name": "4 Southwest Chief", 
+                "departure_date": "2015-05-29T01:33:00+00:00", 
+                "departure_state": "Arizona", 
+                "departure_coordinates": [
+                    -114.052071, 
+                    35.188358
+                ], 
+                "departure_city": "Kingman", 
+                "arrival_station": "Chicago (Chicago Union Station), Illinois", 
+                "duration": 37.7, 
+                "departure_station": "Kingman, Arizona", 
+                "arrival_state": "Illinois", 
+                "accommodation": "1 Reserved Coach Seat", 
+                "arrival_city": "Chicago"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -87.639168, 
+                            41.878731
+                        ], 
+                        [
+                            -71.055298, 
+                            42.351524
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -71.055298, 
+                    42.351524
+                ], 
+                "arrival_date": "2015-05-31T20:01:00+00:00", 
+                "name": "448 Lake Shore Ltd.", 
+                "departure_date": "2015-05-30T21:30:00+00:00", 
+                "departure_state": "Illinois", 
+                "departure_coordinates": [
+                    -87.639168, 
+                    41.878731
+                ], 
+                "departure_city": "Chicago", 
+                "arrival_station": "Boston (South Station), Massachusetts", 
+                "duration": 22.5, 
+                "departure_station": "Chicago (Chicago Union Station), Illinois", 
+                "arrival_state": "Massachusetts", 
+                "accommodation": "1 Reserved Coach Seat", 
+                "arrival_city": "Boston"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "MultiLineString", 
+                "coordinates": [
+                    [
+                        [
+                            -71.055298, 
+                            42.351524
+                        ], 
+                        [
+                            -73.991867, 
+                            40.74968
+                        ]
+                    ]
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "arrival_coordinates": [
+                    -73.991867, 
+                    40.74968
+                ], 
+                "arrival_date": "2015-06-01T19:26:00+00:00", 
+                "name": "175 Regional Service", 
+                "departure_date": "2015-06-01T15:20:00+00:00", 
+                "departure_state": "Massachusetts", 
+                "departure_coordinates": [
+                    -71.055298, 
+                    42.351524
+                ], 
+                "departure_city": "Boston", 
+                "arrival_station": "New York (Penn Station), New York", 
+                "duration": 4.1, 
+                "departure_station": "Boston (South Station), Massachusetts", 
+                "arrival_state": "New York", 
+                "accommodation": "1 Reserved Coach Seat", 
+                "arrival_city": "New York"
+            }
+        }
+    ]
+}

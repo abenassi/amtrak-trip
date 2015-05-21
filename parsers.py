@@ -65,7 +65,16 @@ class BaseState(BaseParser):
 
     @classmethod
     def _parse(cls, line):
-        return line.replace(cls.KEY_WORD, "").strip().split(",")[1].strip()
+        return line.replace(cls.KEY_WORD, "").split(",")[1].strip()
+
+
+class BaseCity(BaseParser):
+
+    @classmethod
+    def _parse(cls, line):
+        station = line.replace(cls.KEY_WORD, "").split(",")[0]
+        city = station.split("(")[0].strip()
+        return city
 
 
 class DepartureStation(BaseDeparture):
@@ -76,12 +85,20 @@ class DepartureState(BaseState, BaseDeparture):
     FIELD_NAME = "departure_state"
 
 
+class DepartureCity(BaseCity, BaseDeparture):
+    FIELD_NAME = "departure_city"
+
+
 class ArrivalStation(BaseArrival):
     FIELD_NAME = "arrival_station"
 
 
 class ArrivalState(BaseState, BaseArrival):
     FIELD_NAME = "arrival_state"
+
+
+class ArrivalCity(BaseCity, BaseArrival):
+    FIELD_NAME = "arrival_city"
 
 
 class Date(BaseParser):

@@ -28,9 +28,11 @@ class AmtrakServiceParser(object):
         self.name = None
         self.departure_station = None
         self.departure_state = None
+        self.departure_city = None
         self.departure_date = None
         self.arrival_station = None
         self.arrival_state = None
+        self.arrival_city = None
         self.arrival_date = None
         self.accommodation = None
 
@@ -90,7 +92,7 @@ def calc_duration(service):
 
 def save_new_json_services(services, json_file_name="amtrak-trip.json"):
     with open(json_file_name, "w") as f:
-        f.write(json.dumps(services))
+        f.write(json.dumps(services, indent=4))
 
 
 def main(filename='trip.txt'):
