@@ -1,0 +1,28 @@
+/** simple visualization */
+
+#amtrak_trip_points{
+  marker-fill-opacity: 0.9;
+  marker-line-color: #FFF;
+  marker-line-width: 1.5;
+  marker-line-opacity: 1;
+  marker-placement: point;
+  marker-type: ellipse;
+  marker-width: 22.5;
+  marker-fill: #6B0FB2;
+  marker-allow-overlap: true;
+  marker-comp-op: color-burn;
+}
+
+#amtrak_trip_points::labels {
+  text-name: [city];
+  text-face-name: 'DejaVu Sans Book';
+  text-size: 20;
+  text-label-position-tolerance: 10;
+  text-fill: #000;
+  text-halo-fill: #FFF;
+  text-halo-radius: 1;
+  text-dy: -17.5;
+  text-allow-overlap: true;
+  text-placement: point;
+  text-placement-type: simple;
+}

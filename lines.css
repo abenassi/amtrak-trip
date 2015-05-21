@@ -1,0 +1,45 @@
+/** category visualization */
+
+#amtrak_trip_lines {
+   line-width: 5;
+   line-opacity: 0.7;
+}
+
+#amtrak_trip_points::labels {
+  text-name: [name];
+  text-face-name: 'DejaVu Sans Book';
+  text-size: 12;
+  text-label-position-tolerance: 14;
+  text-fill: #000000;
+  text-halo-fill: #FFFFFF;
+  text-halo-radius: 1;
+  text-dy: -17.5;
+  text-allow-overlap: false;
+  text-placement: point;
+  text-placement-type: simple;
+}
+
+#amtrak_trip_lines[cartodb_id=1] {
+   line-color: #081B47;
+}
+#amtrak_trip_lines[cartodb_id=2] {
+   line-color: #081B47;
+}
+#amtrak_trip_lines[cartodb_id=3] {
+   line-color: #850200;
+}
+#amtrak_trip_lines[cartodb_id=4] {
+   line-color: #850200;
+}
+#amtrak_trip_lines[cartodb_id=5] {
+   line-color: #850200;
+}
+#amtrak_trip_lines[cartodb_id=6] {
+   line-color: #850200;
+}
+#amtrak_trip_lines[cartodb_id=7] {
+   line-color: #850200;
+}
+#amtrak_trip_lines[cartodb_id=8] {
+   line-color: #850200;
+}

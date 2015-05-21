@@ -61,7 +61,7 @@ class BaseArrival(BaseParser):
     KEY_WORD = "Arrival:"
 
 
-class BaseCity(BaseParser):
+class BaseState(BaseParser):
 
     @classmethod
     def _parse(cls, line):
@@ -72,16 +72,16 @@ class DepartureStation(BaseDeparture):
     FIELD_NAME = "departure_station"
 
 
-class DepartureCity(BaseCity, BaseDeparture):
-    FIELD_NAME = "departure_city"
+class DepartureState(BaseState, BaseDeparture):
+    FIELD_NAME = "departure_state"
 
 
 class ArrivalStation(BaseArrival):
     FIELD_NAME = "arrival_station"
 
 
-class ArrivalCity(BaseCity, BaseArrival):
-    FIELD_NAME = "arrival_city"
+class ArrivalState(BaseState, BaseArrival):
+    FIELD_NAME = "arrival_state"
 
 
 class Date(BaseParser):
