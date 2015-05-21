@@ -16,7 +16,7 @@
 #amtrak_trip_points::labels {
   text-name: [city];
   text-face-name: 'DejaVu Sans Book';
-  text-size: 20;
+  text-size: 17;
   text-label-position-tolerance: 10;
   text-fill: #000;
   text-halo-fill: #FFF;
