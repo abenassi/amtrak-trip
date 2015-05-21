@@ -161,6 +161,8 @@ def main():
         # process departure data of the service
         points_dict[service["departure_city"]]["state"] = \
             service["departure_state"]
+        points_dict[service["departure_city"]]["city"] = \
+            service["departure_city"]
         points_dict[service["departure_city"]]["departure_station"] = \
             service["departure_station"]
         points_dict[service["departure_city"]]["departure_date"] = \
@@ -171,6 +173,8 @@ def main():
         # process arrival data of the service
         points_dict[service["arrival_city"]]["state"] = \
             service["arrival_state"]
+        points_dict[service["arrival_city"]]["city"] = \
+            service["arrival_city"]
         points_dict[service["arrival_city"]]["arrival_station"] = \
             service["arrival_station"]
         points_dict[service["arrival_city"]]["arrival_date"] = \

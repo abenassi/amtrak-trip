@@ -11,6 +11,7 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "city": "Bakersfield", 
                 "arrival_date": "2015-05-26T13:41:00+00:00", 
                 "arrival_station": "Bakersfield, California", 
                 "state": "California", 
@@ -28,6 +29,7 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "city": "Emeryville", 
                 "arrival_date": "2015-05-22T16:10:00+00:00", 
                 "arrival_station": "Emeryville, California", 
                 "state": "California", 
@@ -45,9 +47,10 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "arrival_station": "Las Vegas (Downtown), Nevada", 
+                "city": "Las Vegas", 
                 "state": "Nevada", 
-                "arrival_date": "2015-05-26T18:50:00+00:00"
+                "arrival_date": "2015-05-26T18:50:00+00:00", 
+                "arrival_station": "Las Vegas (Downtown), Nevada"
             }
         }, 
         {
@@ -60,6 +63,7 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "city": "Boston", 
                 "arrival_date": "2015-05-31T20:01:00+00:00", 
                 "arrival_station": "Boston (South Station), Massachusetts", 
                 "state": "Massachusetts", 
@@ -77,6 +81,7 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "city": "Chicago", 
                 "arrival_date": "2015-05-30T15:15:00+00:00", 
                 "arrival_station": "Chicago (Chicago Union Station), Illinois", 
                 "state": "Illinois", 
@@ -94,11 +99,12 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "city": "New York", 
                 "arrival_date": "2015-06-01T19:26:00+00:00", 
-                "departure_date": "2015-05-18T15:40:00+00:00", 
+                "arrival_station": "New York (Penn Station), New York", 
                 "state": "New York", 
                 "departure_station": "New York (Penn Station), New York", 
-                "arrival_station": "New York (Penn Station), New York"
+                "departure_date": "2015-05-18T15:40:00+00:00"
             }
         }, 
         {
@@ -111,9 +117,10 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "departure_date": "2015-05-28T21:30:00+00:00", 
+                "city": "Las Vegas International Airport", 
                 "state": "Nevada", 
-                "departure_station": "Las Vegas International Airport, Nevada"
+                "departure_station": "Las Vegas International Airport, Nevada", 
+                "departure_date": "2015-05-28T21:30:00+00:00"
             }
         }, 
         {
@@ -126,6 +133,7 @@
             }, 
             "type": "Feature", 
             "properties": {
+                "city": "Kingman", 
                 "arrival_date": "2015-05-29T01:00:00+00:00", 
                 "arrival_station": "Kingman, Arizona", 
                 "state": "Arizona", 
