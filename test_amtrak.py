@@ -31,11 +31,13 @@ class AmtrackServiceParserTest(unittest.TestCase):
         exp_record = {
             "name": "49 Lake Shore Ltd.",
             "departure_station": "New York (Penn Station), New York",
+            "departure_state": "New York",
             "departure_city": "New York",
-            "departure_date": arrow.get(2015, 5, 18, 15, 40),
+            "departure_date": '2015-05-18T15:40:00+00:00',
             "arrival_station": "Chicago (Chicago Union Station), Illinois",
-            "arrival_city": "Illinois",
-            "arrival_date": arrow.get(2015, 5, 19, 9, 45),
+            "arrival_state": "Illinois",
+            "arrival_city": "Chicago",
+            "arrival_date": '2015-05-19T09:45:00+00:00',
             "accommodation": "1 Reserved Coach Seat",
         }
 

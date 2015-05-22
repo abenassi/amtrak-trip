@@ -7,7 +7,8 @@ amtrak_geolocalize
 Geolocalize amtrak stations in a json file, add their coordinates, add the_geom
 field with a LineString.
 
-TODO: find amtrak real rail path.
+TODO: find amtrak real rail path (shortest path? amtrak routes dataset? after
+trip data?).
 """
 
 from __future__ import unicode_literals
@@ -15,11 +16,10 @@ import json
 import shapefile
 from fuzzywuzzy import process
 from pprint import pprint
-
 # from graph import rail_graph
 
 
-def load_json_services(json_file="amtrak-trip.json"):
+def load_json_services(json_file="./json/amtrak-trip.json"):
     with open(json_file) as f:
         return json.loads(f.read())
 
@@ -136,7 +136,7 @@ def to_geojson_format(services):
 
 
 def save_new_json_services(services,
-                           json_file_name="amtrak-trip-geoloc.json"):
+                           json_file_name="./json/amtrak-trip-geoloc.json"):
     with open(json_file_name, "w") as f:
         f.write(json.dumps(services, indent=4))
 
@@ -182,18 +182,19 @@ def main():
         points_dict[service["arrival_city"]]["the_geom"] = \
             create_point(service["arrival_coordinates"])
 
-
     # create points json and geojson files
     # pprint(points_dict)
-    save_new_json_services(points_dict.values(), "amtrak-trip-points.json")
+    save_new_json_services(points_dict.values(),
+                           "./json/amtrak-trip-points.json")
     geojson_dict = to_geojson_format(points_dict.values())
-    save_new_json_services(geojson_dict, "amtrak-trip-points.geojson")
+    save_new_json_services(geojson_dict,
+                           "./geojson/amtrak-trip-points.geojson")
 
     # create lines json and geojson files
-    save_new_json_services(services, "amtrak-trip-lines.json")
+    save_new_json_services(services, "./json/amtrak-trip-lines.json")
     # pprint(services)
     geojson_dict = to_geojson_format(services)
-    save_new_json_services(geojson_dict, "amtrak-trip-lines.geojson")
+    save_new_json_services(geojson_dict, "./geojson/amtrak-trip-lines.geojson")
 
 
 if __name__ == '__main__':
