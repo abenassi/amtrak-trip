@@ -36,25 +36,25 @@ Arrival: Las Vegas (Downtown), Nevada
 Tuesday May 26, 2015         6:50PM
 Accommodation: 1 Reserved Thruway Seat
 
-Bus: 8004 Thruway Bus
-Departure: Las Vegas International Airport, Nevada
-Thursday    May 28, 2015         9:30PM
-Arrival: Kingman, Arizona
-Friday  May 29, 2015         1:00AM
-Accommodation: 1 Reserved Thruway Seat
-
-Train: 4 Southwest Chief
-Departure: Kingman, Arizona
-Friday  May 29, 2015         1:33AM
-Arrival: Chicago (Chicago Union Station), Illinois
-Saturday    May 30, 2015         3:15PM
+Train: 30 Capitol Limited
+Departure: Chicago (Chicago Union Station), Illinois
+Saturday    May 30, 2015         6:40PM
+Arrival: Pittsburgh, Pennsylvania
+Sunday  May 31, 2015         5:05AM
 Accommodation: 1 Reserved Coach Seat
 
-Train: 448 Lake Shore Ltd.
-Departure: Chicago (Chicago Union Station), Illinois
-Saturday    May 30, 2015         9:30PM
+Train: 42 Pennsylvanian
+Departure: Pittsburgh, Pennsylvania
+Sunday  May 31, 2015         7:30AM
+Arrival: Philadelphia (30Th St), Pennsylvania
+Sunday  May 31, 2015         2:55PM
+Accommodation: 1 Reserved Coach Seat
+
+Train: 66 Regional Service
+Departure: Philadelphia (30Th St), Pennsylvania
+Monday  June 1, 2015         12:13AM
 Arrival: Boston (South Station), Massachusetts
-Sunday  May 31, 2015         8:01PM
+Monday  June 1, 2015         7:58AM
 Accommodation: 1 Reserved Coach Seat
 
 Train: 175 Regional Service

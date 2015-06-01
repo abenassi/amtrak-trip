@@ -12,11 +12,11 @@
             "type": "Feature", 
             "properties": {
                 "city": "Bakersfield", 
-                "arrival_date": "2015-05-26T13:41:00+00:00", 
+                "arrival_date": "2015-05-26T13:41:00-07:00", 
                 "arrival_station": "Bakersfield, California", 
                 "state": "California", 
                 "departure_station": "Bakersfield, California", 
-                "departure_date": "2015-05-26T13:50:00+00:00"
+                "departure_date": "2015-05-26T13:50:00-07:00"
             }
         }, 
         {
@@ -30,29 +30,45 @@
             "type": "Feature", 
             "properties": {
                 "city": "Emeryville", 
-                "arrival_date": "2015-05-22T16:10:00+00:00", 
+                "arrival_date": "2015-05-22T16:10:00-07:00", 
                 "arrival_station": "Emeryville, California", 
                 "state": "California", 
                 "departure_station": "Emeryville, California", 
-                "departure_date": "2015-05-26T07:40:00+00:00"
+                "departure_date": "2015-05-26T07:40:00-07:00"
             }
         }, 
         {
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -115.148914, 
-                    36.097857
+                    -115.148605, 
+                    36.166813
                 ]
             }, 
             "type": "Feature", 
             "properties": {
                 "city": "Las Vegas", 
-                "arrival_date": "2015-05-26T18:50:00+00:00", 
-                "arrival_station": "Las Vegas (Downtown), Nevada", 
                 "state": "Nevada", 
-                "departure_station": "Las Vegas International Airport, Nevada", 
-                "departure_date": "2015-05-28T21:30:00+00:00"
+                "arrival_date": "2015-05-26T18:50:00-07:00", 
+                "arrival_station": "Las Vegas (Downtown), Nevada"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -79.993256, 
+                    40.445042
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Pittsburgh", 
+                "arrival_date": "2015-05-31T05:05:00-04:00", 
+                "arrival_station": "Pittsburgh, Pennsylvania", 
+                "state": "Pennsylvania", 
+                "departure_station": "Pittsburgh, Pennsylvania", 
+                "departure_date": "2015-05-31T07:30:00-04:00"
             }
         }, 
         {
@@ -66,11 +82,11 @@
             "type": "Feature", 
             "properties": {
                 "city": "Boston", 
-                "arrival_date": "2015-05-31T20:01:00+00:00", 
+                "arrival_date": "2015-06-01T07:58:00-04:00", 
                 "arrival_station": "Boston (South Station), Massachusetts", 
                 "state": "Massachusetts", 
                 "departure_station": "Boston (South Station), Massachusetts", 
-                "departure_date": "2015-06-01T15:20:00+00:00"
+                "departure_date": "2015-06-01T15:20:00-04:00"
             }
         }, 
         {
@@ -84,11 +100,29 @@
             "type": "Feature", 
             "properties": {
                 "city": "Chicago", 
-                "arrival_date": "2015-05-30T15:15:00+00:00", 
+                "arrival_date": "2015-05-19T09:45:00-05:00", 
                 "arrival_station": "Chicago (Chicago Union Station), Illinois", 
                 "state": "Illinois", 
                 "departure_station": "Chicago (Chicago Union Station), Illinois", 
-                "departure_date": "2015-05-30T21:30:00+00:00"
+                "departure_date": "2015-05-30T18:40:00-05:00"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -75.183189, 
+                    39.954609
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "city": "Philadelphia", 
+                "arrival_date": "2015-05-31T14:55:00-04:00", 
+                "arrival_station": "Philadelphia (30Th St), Pennsylvania", 
+                "state": "Pennsylvania", 
+                "departure_station": "Philadelphia (30Th St), Pennsylvania", 
+                "departure_date": "2015-06-01T00:13:00-04:00"
             }
         }, 
         {
@@ -102,29 +136,11 @@
             "type": "Feature", 
             "properties": {
                 "city": "New York", 
-                "arrival_date": "2015-06-01T19:26:00+00:00", 
+                "arrival_date": "2015-06-01T19:26:00-04:00", 
                 "arrival_station": "New York (Penn Station), New York", 
                 "state": "New York", 
                 "departure_station": "New York (Penn Station), New York", 
-                "departure_date": "2015-05-18T15:40:00+00:00"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -114.052071, 
-                    35.188358
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "city": "Kingman", 
-                "arrival_date": "2015-05-29T01:00:00+00:00", 
-                "arrival_station": "Kingman, Arizona", 
-                "state": "Arizona", 
-                "departure_station": "Kingman, Arizona", 
-                "departure_date": "2015-05-29T01:33:00+00:00"
+                "departure_date": "2015-05-18T15:40:00-04:00"
             }
         }
     ]
